@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nice Photography</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+    header.hero {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+    .hero-image {
+      width: 100%;
+      height: 230vh;
+      object-fit: cover;
+      opacity: 0.8;
+    }
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.5);
+      padding: 2rem;
+      border-radius: 10px;
+    }
+    .cta-button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1.5rem;
+      background-color: #000;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    section {
+      padding: 2rem;
+      background-color: #fff;
+      margin: 1rem 0;
+    }
+    h2 {
+      color: #111;
+    }
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .category {
+      background-color: #806b6b;
+      padding: 1rem;
+      text-align: center;
+      border-radius: 5px;
+    }
+    .profile-photo {
+      width: 200px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li {
+      margin: 0.5rem 0;
+    }
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .contact input, .contact textarea {
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .contact button {
+      padding: 0.7rem;
+      background-color: #111;
+      color: white;
+      border: none;
+      border-radius: 4px;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #222;
+      color: #fff;
+    }
+    footer a {
+      color: #fff;
+      text-decoration: underline;
+    }
+    .services {
+      background-color: #cfacac;
+      color: #fff;
+      text-align: center;
+    }
+    .services ul {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <img src="hero.jpg" alt="Nice Photography Hero Image" class="hero-image" />
+    <div class="hero-text">
+      <h1>Capturing Moments That Matter</h1>
+      <p>Clean, crisp, and creative visuals for every occasion.</p>
+      <a href="#portfolio" class="cta-button">View Portfolio</a>
+    </div>
+  </header>
+
+  <section id="portfolio" class="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-grid">
+      <div class="category">Wedding Photography</div>
+      <div class="category">Portraits</div>
+      <div class="category">Events</div>
+      <div class="category">Family & Kids</div>
+    </div>
+    <p><b>Explore our diverse portfolio showcasing the best photography</b></p>
+    <div class="portrait-photos" style="background-color: #b58787; text-align: center;">
+      <img src="IMG1.jpg" alt="Portrait 1" style="width: 50%; border-radius: 5px; margin-top: 0.5rem;">
+      <img src="IMG2.jpg" alt="Portrait 2" style="width: 50%; border-radius: 5px; margin-top: 0.5rem;">
+      <img src="IMG3.jpg" alt="Portrait 3" style="width: 50%; border-radius: 5px; margin-top: 0.5rem;">
+      <img src="IMG9.jpg" alt="Portrait 9" style="width: 50%; border-radius: 5px; margin-top: 0.5rem;">
+      <img src="IMG12.jpg" alt="Portrait 12" style="width: 50%; border-radius: 5px; margin-top: 0.5rem;">
+      <img src="IMG13.jpg" alt="Portrait 13" style="width: 50%; border-radius: 5px; margin-top: 0.5rem;">
+      <img src="IMG17.jpg" alt="Portrait 17" style="width: 50%; border-radius: 5px; margin-top: 0.5rem;">
+      <img src="IMG18.jpg" alt="Portrait 18" style="width: 50%; border-radius: 5px; margin-top: 0.5rem;">
+      <img src="IMG32.jpg" alt="Portrait 32" style="width: 50%; border-radius: 5px; margin-top: 0.5rem;">
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <img src="profile.jpg" alt="Photographer Profile" class="profile-photo" />
+    <p>Professional photography for portraits, events, and brands—crafted with care by Nice Photography. Capturing moments that matter, we deliver clean, crisp, and creative visuals for every occasion.</p>
+    <p><strong>Photography Style:</strong> Editorial</p>
+    <p><strong>Location:</strong> Embu, Kenya</p>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Services</h2>
+    <ul>
+      <li>Portrait Photography</li>
+      <li>Event Photography</li>
+      <li>Family & Kids Photography</li>
+      <li>Commercial Photography</li>
+      <li>Creative & Editorial Shoots</li>
+      <li>Couple & Pre-Wedding Shoots</li>
+      <li>Outdoor & Location Shoots</li>
+      <li>Photo Editing & Retouching</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:ngangasam2022@gmail.com">ngangasam2022@gmail.com</a></p>
+    <p>Phone/WhatsApp: <a href="tel:+254113434053">0113434053</a></p>
+    <p>Location: Embu, Kenya</p>
+    <form action="#" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>Follow us: <a href="https://www.facebook.com/profile.php?id=61558826519402" target="_blank">Facebook</a></p>
+    <p>&copy; 2025 Nice Photography. All rights reserved.</p>
+  </footer>
+</body>
+</html>
